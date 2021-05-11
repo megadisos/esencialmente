@@ -25,13 +25,13 @@ function Menu(props){
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="#home" style={menuSelected} >Inicio</Nav.Link>
+      <Nav.Link href="https://master.d2p0wcikpkc50a.amplifyapp.com" style={menuSelected} >Inicio</Nav.Link>
       <NavDropdown style={menuStyle} title="Nuestros Servicios" id="collasible-nav-dropdown" >
-        <NavDropdown.Item href="#" style={menuStyle}>Terapia de Pareja y Familiar</NavDropdown.Item>
-        <NavDropdown.Item href="#" style={menuStyle}>Terapia Psicológica de Niños, Niñas, y Adolescentes.</NavDropdown.Item>
-        <NavDropdown.Item href="#" style={menuStyle}>Atención Integral para la Vejez</NavDropdown.Item>
-        <NavDropdown.Item href="#" style={menuStyle}>Terapia Sexual</NavDropdown.Item>
-        <NavDropdown.Item href="#" style={menuStyle}>Apoyo en el Proceso de Elaboración de duelo</NavDropdown.Item>
+        <NavDropdown.Item href="https://master.d2p0wcikpkc50a.amplifyapp.com/servicio" style={menuStyle}>Terapia de Pareja y Familiar</NavDropdown.Item>
+        <NavDropdown.Item href="https://master.d2p0wcikpkc50a.amplifyapp.com/servicio" style={menuStyle}>Terapia Psicológica de Niños, Niñas, y Adolescentes.</NavDropdown.Item>
+        <NavDropdown.Item href="https://master.d2p0wcikpkc50a.amplifyapp.com/servicio" style={menuStyle}>Atención Integral para la Vejez</NavDropdown.Item>
+        <NavDropdown.Item href="https://master.d2p0wcikpkc50a.amplifyapp.com/servicio" style={menuStyle}>Terapia Sexual</NavDropdown.Item>
+        <NavDropdown.Item href="https://master.d2p0wcikpkc50a.amplifyapp.com/servicio" style={menuStyle}>Apoyo en el Proceso de Elaboración de duelo</NavDropdown.Item>
       </NavDropdown>
       <Nav.Link href="#link" style={menuStyle} >Quienes Somos</Nav.Link>
       <Nav.Link href="#link" style={menuStyle} >Contacto</Nav.Link>

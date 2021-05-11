@@ -10,9 +10,9 @@ function Nuestros(props){
       <hr />
       
       <Row className="mt-2 nuestros"> 
-      <Col md={4} className="mt-3"><Servicio width="300" height="300"/></Col>
-      <Col md={4} className="mt-3"><Servicio width="300" height="300"/></Col>
-      <Col md={4} className="mt-3"><Servicio width="300" height="300"/></Col>
+      <Col md={4} className="mt-3"><a href="https://master.d2p0wcikpkc50a.amplifyapp.com/servicio"><Servicio width="300" height="300"/></a></Col>
+      <Col md={4} className="mt-3"><a href="https://master.d2p0wcikpkc50a.amplifyapp.com/servicio"><Servicio width="300" height="300"/></a></Col>
+      <Col md={4} className="mt-3"><a href="https://master.d2p0wcikpkc50a.amplifyapp.com/servicio"><Servicio width="300" height="300"/></a></Col>
       
     </Row>
    
