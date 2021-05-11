@@ -126,4 +126,7 @@ body {
     background-color: #13b6cb;
     font-size: 18px;
   }
+  .uservicio p{
+    margin-left: 0%;
+  }
 }
