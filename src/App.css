@@ -99,6 +99,15 @@ body {
   color: white;
   text-decoration: underline;
 }
+.invitacion{
+  background-color: #13b6cb;
+  height: 400px;
+}
+.infoimg{
+  width:500px;
+  height:350px;
+}
+
 @media all and ( max-width : 700px){
   .mr-auto{
     margin-left: 0%;
@@ -128,5 +137,9 @@ body {
   }
   .uservicio p{
     margin-left: 0%;
+  }
+  .infoimg{
+    width:300px;
+    height:350px;
   }
 }

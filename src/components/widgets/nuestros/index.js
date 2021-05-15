@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {Image, Row, Container,Col} from 'react-bootstrap'
-import Servicio from './../servicio'
+import Servicio from '../servicio'
 function Nuestros(props){
     return(
         <Container>
