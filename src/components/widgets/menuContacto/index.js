@@ -13,9 +13,9 @@ function MenuContacto(props){
  return (
      
          <Row className="menuContacto justify-content-md-center" >
-             <Col md={4} ><FontAwesomeIcon icon={faPhone} style={iconStyle}/> {info.id}</Col>
-             <Col  md={4}><FontAwesomeIcon icon={faEnvelope} style={iconStyle}/>{info.correo}</Col>
-             <Col  md={4}><FontAwesomeIcon icon={faMapMarkerAlt} style={iconStyle}/>{info.numero}</Col>
+             <Col md={4} ><FontAwesomeIcon icon={faPhone} style={iconStyle}/> {info[0].numero}</Col>
+             <Col  md={4}><FontAwesomeIcon icon={faEnvelope} style={iconStyle}/>{info[0].correo}</Col>
+             <Col  md={4}><FontAwesomeIcon icon={faMapMarkerAlt} style={iconStyle}/>{info[0].direccion}</Col>
          </Row>
  )
 }
