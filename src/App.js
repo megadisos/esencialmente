@@ -20,7 +20,7 @@ function App() {
     .then( resp => resp.json())
     .then( resp => setServicios(resp))
     .catch( error => console.log(error))
-    .then( resp => console.log(resp))
+    .then( resp => console.log("Esta es la respuesta" +resp))
  fetch("https://www.nabtastore.com.co/api-ese/Informacion/",{
            method: 'GET',
            headers: {
