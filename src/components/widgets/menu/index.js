@@ -1,6 +1,7 @@
-import React, {useState} from 'react'
+import React, {useState,useContext} from 'react'
 import {Row, Navbar,Nav,Col,NavDropdown} from 'react-bootstrap'
 import Logo from './../logo'
+import {mycontext} from './../../../App'
 function Menu(props){
     let menuStyle = {
         "color":"#1c8e96",
@@ -16,7 +17,7 @@ function Menu(props){
         "margin-right": "10px",
         "background-color": "#13b6cb",
     }
-
+   
     return(
         <Row className="menu mt-4">
             <Col>
@@ -27,11 +28,12 @@ function Menu(props){
     <Nav className="mr-auto">
       <Nav.Link href="https://master.d2p0wcikpkc50a.amplifyapp.com" style={menuSelected} >Inicio</Nav.Link>
       <NavDropdown style={menuStyle} title="Nuestros Servicios" id="collasible-nav-dropdown" >
-        <NavDropdown.Item href="https://master.d2p0wcikpkc50a.amplifyapp.com/servicio" style={menuStyle}>Servicio 1</NavDropdown.Item>
-        <NavDropdown.Item href="https://master.d2p0wcikpkc50a.amplifyapp.com/servicio" style={menuStyle}>Servicio 2</NavDropdown.Item>
-        <NavDropdown.Item href="https://master.d2p0wcikpkc50a.amplifyapp.com/servicio" style={menuStyle}>Servicio 3</NavDropdown.Item>
-        <NavDropdown.Item href="https://master.d2p0wcikpkc50a.amplifyapp.com/servicio" style={menuStyle}>Servicio 4</NavDropdown.Item>
-        <NavDropdown.Item href="https://master.d2p0wcikpkc50a.amplifyapp.com/servicio" style={menuStyle}>Servicio 5</NavDropdown.Item>
+      {serv && serv.map(sr=>{
+                     return(
+                      <NavDropdown.Item href="https://master.d2p0wcikpkc50a.amplifyapp.com/servicio" style={menuStyle}>{sr.titulo}</NavDropdown.Item>
+                     )
+                 })}
+        
       </NavDropdown>
       <Nav.Link href="#link" style={menuStyle} >Quienes Somos</Nav.Link>
       <Nav.Link href="#link" style={menuStyle} >Contacto</Nav.Link>

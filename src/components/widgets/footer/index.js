@@ -17,7 +17,7 @@ const [serv] = servicios;
                  <h6>Nuestros servicios</h6>
                  {serv && serv.map(sr=>{
                      return(
-                        <p>{serv.titulo}</p>
+                        <p>{sr.titulo}</p>
                      )
                  })}
                  </Col>
