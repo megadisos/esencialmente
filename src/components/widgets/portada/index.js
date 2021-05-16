@@ -1,9 +1,12 @@
-import React, {useState} from 'react'
+import React, {useState,useContext} from 'react'
 import {Image, Jumbotron, Container, Button} from 'react-bootstrap'
 import portada from './../../../images/portada.jpg'
+import {mycontext} from './../../../App'
 function Portada(props){
-    return(
-      <Image src={portada} className="portada" />
+  const {portada} = useContext(mycontext);
+  const [port] = portada;
+  return(
+      <Image src={port[0] && port[0].get_path} className="portada" />
     )
 }
 export default Portada;

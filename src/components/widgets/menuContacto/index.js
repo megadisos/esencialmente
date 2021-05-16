@@ -9,7 +9,7 @@ function MenuContacto(props){
     }
     const {informacion} = useContext(mycontext);
     const [info] = informacion;
-    console.log(info);
+    
  return (
      
          <Row className="menuContacto justify-content-md-center" >
