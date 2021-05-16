@@ -17,7 +17,8 @@ function Menu(props){
         "margin-right": "10px",
         "background-color": "#13b6cb",
     }
-   
+    const {servicios} = useContext(mycontext);
+    const [serv] = servicios;
     return(
         <Row className="menu mt-4">
             <Col>
