@@ -8,8 +8,8 @@ function Servicio(props){
     }
     return(
         <div className="container" >
-      <Image src={servicio} className="servicio" width={props.width} height={props.height}/>
-      <div class="centered" style={sizeText}>Terapia de Pareja y Familiar</div>
+      <Image src={props.src} className="servicio" width={props.width} height={props.height}/>
+      <div class="centered" style={sizeText}>{props.title}</div>
       </div>
     )
 }

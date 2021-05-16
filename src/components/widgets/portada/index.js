@@ -6,7 +6,9 @@ function Portada(props){
   const {portada} = useContext(mycontext);
   const [port] = portada;
   return(
+    <a href={port[0] && port[0].link} >
       <Image src={port[0] && port[0].get_path} className="portada" />
+      </a>
     )
 }
 export default Portada;

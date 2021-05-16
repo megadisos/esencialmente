@@ -1,7 +1,10 @@
-import React, {useState} from 'react'
+import React, {useState,useContext} from 'react'
 import {Image, Row, Container,Col} from 'react-bootstrap'
 import Servicio from '../servicio'
+import {mycontext} from './../../../App'
 function Nuestros(props){
+    const {servicios} = useContext(mycontext);
+    const [serv] = servicios;
     return(
         <Container>
       <Row className="mt-4 titulo">
@@ -10,10 +13,12 @@ function Nuestros(props){
       <hr />
       
       <Row className="mt-2 nuestros"> 
-      <Col md={4} className="mt-3"><a href="https://master.d2p0wcikpkc50a.amplifyapp.com/servicio"><Servicio width="300" height="300"/></a></Col>
-      <Col md={4} className="mt-3"><a href="https://master.d2p0wcikpkc50a.amplifyapp.com/servicio"><Servicio width="300" height="300"/></a></Col>
-      <Col md={4} className="mt-3"><a href="https://master.d2p0wcikpkc50a.amplifyapp.com/servicio"><Servicio width="300" height="300"/></a></Col>
-      
+      {serv && serv.map(sr=>{
+          return (
+            <Col md={4} className="mt-3"><a href=""><Servicio width="300" height="300" src={sr.get_path} title={sr.titulo}/></a></Col>
+          )
+      })}
+
     </Row>
    
     </Container>
