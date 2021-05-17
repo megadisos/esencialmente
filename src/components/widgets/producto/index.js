@@ -23,7 +23,7 @@ function Serviciou(props){
                 )
                 
             })}
-            {serv && serv.filter(sr => sr.id === id).map(ser => {
+            {serv && serv.filter(sr => parseInt(sr.id) === parseInt(id)).map(ser => {
                 return(
                     <Row>
                     <Col md={4}><Image src={ser.get_path} width="400" height="400"/></Col>
