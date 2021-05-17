@@ -5,7 +5,7 @@ import {mycontext} from './../../../App'
 function Serviciou(props){
     const {servicios} = useContext(mycontext);
     const [serv] = servicios;
-    const id = props.match.params.id;
+    const id = props.pid;
     let size = props.width 
     let sizeText = {
         "width" : "500",
