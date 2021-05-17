@@ -8,7 +8,7 @@ function Servicio(props){
     }
     return(
         <div className="container" >
-      <Image src={props.src} className="servicio" width={props.width} height={props.height}/>
+      <Image src={props.src} className="servicio" width={props.width} height={props.height}  onClick={e => props.irServicios(props.id,props.title)} />
       <div class="centered" style={sizeText}>{props.title}</div>
       </div>
     )
