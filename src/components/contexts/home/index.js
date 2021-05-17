@@ -7,13 +7,19 @@ import Nuestros from './../../widgets/nuestros'
 import Agenda from './../../widgets/agendamiento'
 import Footer from './../../widgets/footer'
 import Cafe from './../../widgets/cafe'
+import  { useHistory } from 'react-router-dom'
 function Home(props){
+    let history = useHistory()
+    const irServicios = (id, titulo) =>{
+        let nTitulo = titulo.replace(" ","-");
+        history.push(`/${id}/${nTitulo}`);
+    }
     return(
         <Container fluid className="main-container">
         <MenuContacto />
         <Menu />
         <Portada />
-        <Nuestros />
+        <Nuestros irServicios={irServicios}/>
         <Cafe />
         <Agenda />
         <Footer />

@@ -15,7 +15,7 @@ function Nuestros(props){
       <Row className="mt-2 nuestros"> 
       {serv && serv.map(sr=>{
           return (
-            <Col md={4} className="mt-3"><a href=""><Servicio width="300" height="300" src={sr.get_path} title={sr.titulo}/></a></Col>
+            <Col md={4} className="mt-3"><Servicio width="300" height="300" src={sr.get_path} title={sr.titulo} onClick={e => props.irServicios(sr.id,sr.titulo)}/></Col>
           )
       })}
 

@@ -7,7 +7,7 @@ function Routing(props){
         <Router>
         <Switch>
             <Route exact path="/"><Home /></Route>
-            <Route path="/servicio"><Servicios /></Route>
+            <Route path="/:id/:name"><Servicios /></Route>
         </Switch>
     </Router>
     )
