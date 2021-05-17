@@ -10,9 +10,10 @@ function Serviciou(props){
     let sizeText = {
         "width" : "500",
     }
+    console.log(id);
     return(
         <Container className="uservicio">
-            {serv && serv.filter(sr => sr.id === id).map(ser => {
+            {serv && serv.filter(sr => parseInt(sr.id) === parseInt(id)).map(ser => {
                  <Row className="mb-3 mt-2">
                  <Col md={12}><h1>{ser.titulo}</h1></Col>
            
