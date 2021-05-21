@@ -9,7 +9,7 @@ function Menu(props){
         "font-size": "20px",
         "font-weight": "bold",
         "margin-right": "10px",
-        "background-color":"#dadada",
+        "background-color":"white",
         "text-decoration":"none"
     }
     let menuSelected = {
