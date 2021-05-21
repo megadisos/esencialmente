@@ -99,6 +99,10 @@ body {
   background-color: #1c8e96;
   
 }
+.footer a{
+  color: white;
+  text-decoration: none;
+}
 .footer p{
   color: white;
 }
@@ -154,5 +158,8 @@ body {
   .infoimg{
     width:300px;
     height:350px;
+  }
+  .drop{
+    font-size: 10px;
   }
 }

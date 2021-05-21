@@ -28,13 +28,12 @@ function Menu(props){
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
       <Nav.Link href="https://master.d2p0wcikpkc50a.amplifyapp.com" style={menuSelected} >Inicio</Nav.Link>
-      <NavDropdown style={menuStyle} title="Nuestros Servicios" id="collasible-nav-dropdown" >
+      <NavDropdown className="drop" style={menuStyle} title="Nuestros Servicios" id="collasible-nav-dropdown" >
       {serv && serv.map(sr=>{
                      return(
                       <NavDropdown.Item href="https://master.d2p0wcikpkc50a.amplifyapp.com/servicio" style={menuStyle}>{sr.titulo}</NavDropdown.Item>
                      )
                  })}
-        
       </NavDropdown>
       <Nav.Link href="https://master.d2p0wcikpkc50a.amplifyapp.com/acerca" style={menuStyle} >Quienes Somos</Nav.Link>
       <Nav.Link href="#link" style={menuStyle} >Contacto</Nav.Link>
