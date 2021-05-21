@@ -20,7 +20,7 @@ function Agenda(props){
       const dataToSend = {
         "nombre" : nombre,
         "email" : email,
-        "celular" : celular,
+        "celular" : parseInt(celular),
         "consulta" : consulta,
         "mensaje" : mensaje
     }
