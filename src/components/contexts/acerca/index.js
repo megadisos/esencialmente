@@ -7,10 +7,14 @@ import Footer from './../../widgets/footer'
 import Quienes from './../../widgets/acerca'
 function Acerca(props){
     const id = props.match.params.id;
+    const irServicios = (id, titulo) =>{
+        let nTitulo = titulo.replaceAll(" ","-").replaceAll(",","-").replaceAll(".","-").replaceAll("","");
+        history.push(`/${id}/${nTitulo}`);
+    }
     return(
         <Container fluid className="main-container">
         <MenuContacto />
-        <Menu />
+        <Menu irServicios={irServicios}/>
         <Quienes />
         <Footer />
         </Container>
