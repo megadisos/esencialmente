@@ -36,7 +36,7 @@ function Menu(props){
                  })}
         
       </NavDropdown>
-      <Nav.Link href="#link" style={menuStyle} >Quienes Somos</Nav.Link>
+      <Nav.Link href="https://master.d2p0wcikpkc50a.amplifyapp.com/acerca" style={menuStyle} >Quienes Somos</Nav.Link>
       <Nav.Link href="#link" style={menuStyle} >Contacto</Nav.Link>
     </Nav>
   </Navbar.Collapse>

@@ -1,6 +1,9 @@
-
+html,
 body {
   text-align: center;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
 }
 @font-face {
   font-family: roboto;
@@ -94,6 +97,7 @@ body {
 }
 .footer{
   background-color: #1c8e96;
+  
 }
 .footer p{
   color: white;
@@ -112,6 +116,10 @@ body {
 }
 .uservicio h1{
   color: #13b6cb;
+}
+.ims{
+  width: 200px;
+  height: 200px;
 }
 @media all and ( max-width : 700px){
   .mr-auto{
