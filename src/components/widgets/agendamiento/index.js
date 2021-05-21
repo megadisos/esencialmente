@@ -15,7 +15,8 @@ function Agenda(props){
     let marginText = {
         "margin-left":"2px",
     }
-    const enviar =() =>{
+    function enviar(){
+      console.log("entre")
       const dataToSend = {
         "nombre" : nombre,
         "email" : email,
@@ -75,10 +76,11 @@ function Agenda(props){
     <Form.Label>Mensaje</Form.Label>
     <Form.Control as="textarea" rows={3} onChange={e=> setMensaje(e.target.value)}/>
   </Form.Group>
-  <Button variant="primary" type="submit" id="modalButton" onClick={e=>enviar()}>
+ 
+</Form>
+<Button variant="primary" type="button" id="modalButton" onClick={e => enviar()}>
     Solicitar
   </Button>
-</Form>
         </Modal.Body>
         <Modal.Footer>
       
