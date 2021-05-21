@@ -9,7 +9,8 @@ function Menu(props){
         "font-size": "20px",
         "font-weight": "bold",
         "margin-right": "10px",
-        "background-color":"#dadada"
+        "background-color":"#dadada",
+        "text-decoration":"none"
     }
     let menuSelected = {
         "color":"#dadada",
@@ -17,6 +18,7 @@ function Menu(props){
         "font-weight": "bold",
         "margin-right": "10px",
         "background-color": "#13b6cb",
+        "text-decoration":"none"
     }
     const {servicios} = useContext(mycontext);
     const [serv] = servicios;
