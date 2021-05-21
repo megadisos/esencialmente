@@ -11,7 +11,7 @@ import  { useHistory } from 'react-router-dom'
 function Home(props){
     let history = useHistory()
     const irServicios = (id, titulo) =>{
-        let nTitulo = titulo.replace(" ","-").replace(",","-").replace(".","-").replace("","-");
+        let nTitulo = titulo.replaceAll(" ","-").replaceAll(",","-").replaceAll(".","-").replaceAll("","");
         history.push(`/${id}/${nTitulo}`);
     }
     return(
