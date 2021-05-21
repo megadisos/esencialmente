@@ -17,7 +17,7 @@ function Home(props){
     return(
         <Container fluid className="main-container">
         <MenuContacto />
-        <Menu />
+        <Menu irServicios={irServicios}/>
         <Portada />
         <Nuestros irServicios={irServicios}/>
         <Cafe />

@@ -31,7 +31,7 @@ function Menu(props){
       <NavDropdown className="drop" style={menuStyle} title="Nuestros Servicios" id="collasible-nav-dropdown" >
       {serv && serv.map(sr=>{
                      return(
-                      <NavDropdown.Item href="https://master.d2p0wcikpkc50a.amplifyapp.com/servicio" style={menuStyle}>{sr.titulo}</NavDropdown.Item>
+                      <NavDropdown.Item onClick={e => props.irServicios(sr.id,sr.title)}  style={menuStyle}>{sr.titulo}</NavDropdown.Item>
                      )
                  })}
       </NavDropdown>
