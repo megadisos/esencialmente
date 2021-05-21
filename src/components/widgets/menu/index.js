@@ -1,9 +1,10 @@
 import React, {useState,useContext} from 'react'
 import {Row, Navbar,Nav,Col,NavDropdown} from 'react-bootstrap'
-import {Link} from 'react-router-dom'
+import {Link, useLocation} from 'react-router-dom'
 import Logo from './../logo'
 import {mycontext} from './../../../App'
 function Menu(props){
+    const location = useLocation();
     let menuStyle = {
         "color":"#1c8e96",
         "font-size": "20px",
@@ -43,7 +44,7 @@ function Menu(props){
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link  style={menuSelected}><Link to="/" style={linkStyle}>Inicio</Link></Nav.Link>
+      <Nav.Link  style={location.pathname === "/ " ? menuSelected: menuStyle}><Link to="/" style={linkStyle}>Inicio</Link></Nav.Link>
       <NavDropdown className="drop" style={menuStyle} title="Nuestros Servicios" id="collasible-nav-dropdown" >
       {serv && serv.map(sr=>{
                      return(
@@ -51,8 +52,8 @@ function Menu(props){
                      )
                  })}
       </NavDropdown>
-      <Nav.Link style={menuStyle} ><Link to="/acerca" style={linkStyle}>Quienes Somos</Link></Nav.Link>
-      <Nav.Link  style={menuStyle} ><Link to="/contacto" style={linkStyle}>Contacto</Link></Nav.Link>
+      <Nav.Link style={location.pathname === "/acerca " ? menuSelected: menuStyle} ><Link to="/acerca" style={linkStyle}>Quienes Somos</Link></Nav.Link>
+      <Nav.Link  style={location.pathname === "/contacto " ? menuSelected: menuStyle} ><Link to="/contacto" style={linkStyle}>Contacto</Link></Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
