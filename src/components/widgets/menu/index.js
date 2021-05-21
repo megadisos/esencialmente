@@ -33,6 +33,10 @@ function Menu(props){
         "color":"white",
         "text-decoration":"none",
     }
+    let linksStyle = {
+        "color":"#1c8e96",
+        "text-decoration":"none",
+    }
     const {servicios} = useContext(mycontext);
     const [serv] = servicios;
     return(
@@ -43,7 +47,7 @@ function Menu(props){
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link  style={location.pathname === "/" ? menuSelected: menuStyle}><Link to="/" >Inicio</Link></Nav.Link>
+      <Nav.Link  style={location.pathname === "/" ? menuSelected: menuStyle}><Link to="/" style={location.pathname === "/" ? linkStyle: linksStyle}>Inicio</Link></Nav.Link>
       <NavDropdown className="drop" style={menuStyle} title="Nuestros Servicios" id="collasible-nav-dropdown" >
       {serv && serv.map(sr=>{
                      return(
@@ -51,8 +55,8 @@ function Menu(props){
                      )
                  })}
       </NavDropdown>
-      <Nav.Link style={location.pathname === "/acerca" ? menuSelected: menuStyle} ><Link to="/acerca" >Quienes Somos</Link></Nav.Link>
-      <Nav.Link  style={location.pathname === "/contacto" ? menuSelected: menuStyle} ><Link to="/contacto" >Contacto</Link></Nav.Link>
+      <Nav.Link style={location.pathname === "/acerca" ? menuSelected: menuStyle} ><Link to="/acerca" style={location.pathname === "/acerca" ? linkStyle: linksStyle}>Quienes Somos</Link></Nav.Link>
+      <Nav.Link  style={location.pathname === "/contacto" ? menuSelected: menuStyle} ><Link to="/contacto" style={location.pathname === "/contacto" ? linkStyle: linksStyle}>Contacto</Link></Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
