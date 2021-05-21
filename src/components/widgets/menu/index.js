@@ -30,9 +30,7 @@ function Menu(props){
         "text-decoration":"none"
     }
     let linkStyle = {
-        "color": "#1c8e96",
-        "text-decoration":"none"
-
+        "text-decoration":"none",
     }
     const {servicios} = useContext(mycontext);
     const [serv] = servicios;
