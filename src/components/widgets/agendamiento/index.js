@@ -23,7 +23,7 @@ function Agenda(props){
         "consulta" : consulta,
         "mensaje" : mensaje
     }
-      fetch("https://www.nabtastore.com.co/api-ci/Citas/",{
+      fetch("https://www.nabtastore.com.co/api-ese/Citas/",{
         method: 'POST',
         headers: {
           'Content-Type':'application/json',
