@@ -9,6 +9,14 @@ function Menu(props){
         "font-size": "20px",
         "font-weight": "bold",
         "margin-right": "10px",
+        "background-color":"#dadada",
+        "text-decoration":"none"
+    }
+    let menuStyles = {
+        "color":"#1c8e96",
+        "font-size": "20px",
+        "font-weight": "bold",
+        "margin-right": "10px",
         "background-color":"white",
         "text-decoration":"none"
     }
@@ -39,7 +47,7 @@ function Menu(props){
       <NavDropdown className="drop" style={menuStyle} title="Nuestros Servicios" id="collasible-nav-dropdown" >
       {serv && serv.map(sr=>{
                      return(
-                      <NavDropdown.Item onClick={e => props.irServicios(sr.id,sr.titulo)}  style={menuStyle}>{sr.titulo}</NavDropdown.Item>
+                      <NavDropdown.Item onClick={e => props.irServicios(sr.id,sr.titulo)}  style={menuStyles}>{sr.titulo}</NavDropdown.Item>
                      )
                  })}
       </NavDropdown>
