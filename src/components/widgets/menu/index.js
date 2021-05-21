@@ -1,5 +1,6 @@
 import React, {useState,useContext} from 'react'
 import {Row, Navbar,Nav,Col,NavDropdown} from 'react-bootstrap'
+import {Link} from 'react-router-dom'
 import Logo from './../logo'
 import {mycontext} from './../../../App'
 function Menu(props){
@@ -27,16 +28,16 @@ function Menu(props){
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="https://master.d2p0wcikpkc50a.amplifyapp.com" style={menuSelected} >Inicio</Nav.Link>
+      <Nav.Link  style={menuSelected}><Link to="/">Inicio</Link></Nav.Link>
       <NavDropdown className="drop" style={menuStyle} title="Nuestros Servicios" id="collasible-nav-dropdown" >
       {serv && serv.map(sr=>{
                      return(
-                      <NavDropdown.Item onClick={e => props.irServicios(sr.id,sr.title)}  style={menuStyle}>{sr.titulo}</NavDropdown.Item>
+                      <NavDropdown.Item onClick={e => props.irServicios(sr.id,sr.titulo)}  style={menuStyle}>{sr.titulo}</NavDropdown.Item>
                      )
                  })}
       </NavDropdown>
-      <Nav.Link href="https://master.d2p0wcikpkc50a.amplifyapp.com/acerca" style={menuStyle} >Quienes Somos</Nav.Link>
-      <Nav.Link href="#link" style={menuStyle} >Contacto</Nav.Link>
+      <Nav.Link style={menuStyle} ><Link to="/acerca">Quienes Somos</Link></Nav.Link>
+      <Nav.Link  style={menuStyle} ><Link to="/contacto">Contacto</Link></Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
