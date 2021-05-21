@@ -7,7 +7,7 @@ function Agenda(props){
     const [nombre,setNombre] = useState("");
     const [email,setEmail] = useState("");
     const [celular,setCelular] = useState(0);
-    const [consulta,setConsulta] = useState("");
+    const [consulta,setConsulta] = useState("Terapia de Pareja y Familiar");
     const [mensaje,setMensaje] = useState("");
     let iconStyle = {
         "color":"black",
@@ -17,6 +17,7 @@ function Agenda(props){
     }
     function enviar(){
       console.log("entre")
+      console.log(consulta)
       const dataToSend = {
         "nombre" : nombre,
         "email" : email,
