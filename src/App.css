@@ -160,6 +160,10 @@ body {
     height:350px;
   }
   .drop{
-    font-size: 10px;
+    font-size: 2px;
+  }
+  .invitacion{
+    background-color: #13b6cb;
+    height: 600px;
   }
 }
